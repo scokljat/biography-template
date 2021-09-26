@@ -1,0 +1,79 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+ul li::marker {
+  content: "- ";
+}
+
+body {
+  background-color: #f6e8e5;
+  line-height: 1.6;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 20%;
+  padding: 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+.rowHeadline {
+  display: flex;
+  font-family: "Arial";
+  font-size: 14;
+}
+
+.wrap {
+  display: flex;
+  margin-top: 0;
+}
+.sixColumns {
+  display: flex;
+  font-family: sans-serif;
+  margin-top: 20%;
+}
+.firstColumn {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+.secondColumn {
+  display: flex;
+  flex-direction: column;
+}
+.threeColumns {
+  display: flex;
+  font-size: 16px;
+  line-height: 2.4;
+  margin-top: 10%;
+}
+
+.firstC {
+  flex: 1;
+  font-size: 14px;
+  line-height: 1.3;
+  padding: 10px;
+}
+button {
+  display: inline-block;
+  background-color: #f6e8e5;
+  height: 50px;
+  width: 100%;
+  margin-top: 30%;
+}
+.secondC {
+  padding: 10px;
+}

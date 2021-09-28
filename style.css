@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-  -webkit-text-size-adjust: 100%;
 }
 *,
 *:before,
@@ -11,24 +10,28 @@ ul li::marker {
   content: "- ";
 }
 * {
-  white-space: initial;
+  word-spacing: normal;
 }
 
 body {
   background-color: #f6e8e5;
   line-height: 1.6;
   font-family: "Roboto", sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 .container {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .row {
   display: flex;
   flex-basis: content;
-  padding: 20%;
+  padding-left: 20%;
+  padding-right: 20%;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -47,10 +50,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding: 10% 20%;
 }
 .firstColumn {
   padding-right: 20px;
@@ -85,6 +85,13 @@ h4 {
   flex: 1;
 }
 
+img.displayed {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 5px;
+}
+
 @media (min-width: 576px) {
   .sixColumns {
     display: flex;
@@ -94,9 +101,9 @@ h4 {
     display: flex;
     flex-direction: row;
   }
-}
-@media (max-width: 768px) {
-  .body {
-    width: 80%;
+  img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
